@@ -1,20 +1,21 @@
 ---
-title: "Teaching experience 2"
+title: "Mathematics Teaching Assistant"
 collection: teaching
-type: "Workshop"
+type: "Math 137 & 138 - Calculus 1 & 2 for Honours Mathematics"
 permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
+venue: "University of Waterloo, Faculty of Mathematics"
 date: 2015-01-01
-location: "City, Country"
+location: "Waterloo, Ontario, Canada"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+• Held office hours and pre-exam helping sessions for first-year Calculus.
+• Participated in assignment and exam marking.
 
-Heading 1
+<!-- Heading 1
 ======
 
 Heading 2
 ======
 
 Heading 3
-======
+====== -->

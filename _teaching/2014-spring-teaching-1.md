@@ -1,20 +1,24 @@
 ---
-title: "Teaching experience 1"
+title: "Instructional Support Assistant"
 collection: teaching
-type: "Undergraduate course"
+type: "CS 240 - Data Structures and Data Management"
 permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
+venue: "University of Waterloo, Cherition School of Computer Science"
 date: 2014-01-01
-location: "City, Country"
+location: "Waterloo, Ontario, Canada"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+• Designed written and programming questions covering data structure & algorithms for assessment purposes. Topics
+include heap, sorting, randomized algorithm, AVL tree, hash table, pattern matching and encryption.
+• Taught weekly tutorials regarding materials covered in class and held office hours for individual help.
+• Led biweekly marking meetings and supervised 12 to 15 other TAs in assignment marking.
+• Attended lectures and provided feedback during weekly planning meetings with instructors
 
-Heading 1
+<!-- Heading 1
 ======
 
 Heading 2
 ======
 
 Heading 3
-======
+====== -->
