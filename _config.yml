@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Yilin (Jason) Zhang"
   avatar           : "profile.png"
-  bio              : "New Grad from the University of Waterloo"
+  bio              : "Recent Graduate from the University of Waterloo"
   location         : "Waterloo, ON, Canada"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : # "http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?user=_7PIqckAAAAJ&hl=en"
   email            : y2785zha@uwaterloo.ca
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
