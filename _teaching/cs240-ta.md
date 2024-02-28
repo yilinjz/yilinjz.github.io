@@ -1,8 +1,8 @@
 ---
-title: "CS 240 - Data Structures and Data Management"
+title: "CS 240: Data Structures and Data Management"
 collection: teaching
 type: "Instructional Support Assistant"
-permalink: /teaching/cs240-teaching
+permalink: /teaching/cs240-ta
 venue: "University of Waterloo, Cherition School of Computer Science"
 date: 2020-05-02
 location: "Waterloo, Ontario, Canada"
