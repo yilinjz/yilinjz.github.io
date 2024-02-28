@@ -12,18 +12,25 @@ redirect_from:
 Education
 ======
 * B.S. in Computer Science, University of Waterloo, 2023
+  * Minor in Combinatorics and Optimization
 
-Work experience
+Industrial experience
 ======
-* Summer & Fall 2022: Amazon
-  * Software Development Engineer Intern
+* Amazon
+  * Software Development Engineer Intern, 2022.05 - 2022.12
 
-* Fall 2021: Oracle
-  * Software Engineer Intern
+* Oracle NetSuite
+  * Software Engineer Intern, 2021.09 - 2021.12
 
-* Winter 2021: XE.com
-  * Full-Stack Developer Intern
-  
+* XE.com
+  * Full-Stack Developer Intern, 2021.01 - 2021.04
+
+TA Experience
+======
+  <ul>{% for post in site.teaching %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
 <!-- Skills
 ======
 * Skill 1
@@ -44,12 +51,6 @@ Work experience
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul> -->
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
   
 <!-- Service and leadership
 ======

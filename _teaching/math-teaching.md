@@ -1,8 +1,8 @@
 ---
-title: "Mathematics Teaching Assistant"
+title: "Math 137 & 138 - Calculus 1 & 2 for Honours Mathematics" 
 collection: teaching
-type: "Math 137 & 138 - Calculus 1 & 2 for Honours Mathematics"
-permalink: /teaching/2015-spring-teaching-1
+type: "Mathematics Teaching Assistant"
+permalink: /teaching/math-teaching
 venue: "University of Waterloo, Faculty of Mathematics"
 date: 2020-01-01
 location: "Waterloo, Ontario, Canada"
