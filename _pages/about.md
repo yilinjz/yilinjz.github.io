@@ -8,4 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am a recent graduate from the University of Waterloo with a Bachelor of Computer Science. My research interests include Human-Computer Interation (HCI), Natural Language Processing (NLP) and Information Retrieval (IR).
+Welcome! I am a recent graduate from the University of Waterloo majored in Computer Science. My research interests include Human-Computer Interation (HCI), Natural Language Processing (NLP) and Information Retrieval (IR).
+
+
