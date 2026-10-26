@@ -55,7 +55,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 64px; }
 .hero h1 { font-family: var(--serif); font-weight: 500; font-size: 44px; line-height: 1.1; letter-spacing: -0.01em; margin: 0 0 6px; }
 .hero .alt { font-family: var(--serif); font-weight: 400; color: var(--muted); font-size: 26px; margin-left: 10px; }
 .hero .role { color: var(--muted); font-size: 17px; margin: 0 0 20px; }
-.hero .bar { color: var(--rule); margin: 0 6px; }
+.bar { color: var(--rule); margin: 0 6px; }
 .hero p { margin: 0 0 14px; max-width: 60ch; }
 .focus { margin: 0 0 16px; padding-left: 1.1em; max-width: 60ch; display: grid; gap: 8px; }
 .focus li::marker { color: var(--accent); }
