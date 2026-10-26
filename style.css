@@ -1,0 +1,116 @@
+/* Single-column personal homepage.
+   Type: Newsreader for the name and section titles, Source Sans 3 for everything else.
+   Color: warm white ground, slate accent (same as the CV), grey for secondary text. */
+
+:root {
+  --bg: #fcfcfb;
+  --fg: #1c1e21;
+  --muted: #6b7078;
+  --rule: #e5e5e1;
+  --accent: #3e5c76;
+  --accent-soft: #e9eef3;
+  --serif: "Newsreader", "Charter", "Iowan Old Style", Georgia, serif;
+  --sans: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  --w: 780px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15171a; --fg: #e8e8e4; --muted: #9a9fa6; --rule: #2a2d31;
+    --accent: #9bb6cf; --accent-soft: #232b33;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.6;
+  padding-inline: max(20px, env(safe-area-inset-left, 0px)) max(20px, env(safe-area-inset-right, 0px));
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+img { max-width: 100%; }
+::selection { background: var(--accent-soft); }
+
+/* Top nav */
+.top { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--rule); margin-inline: calc(-1 * max(20px, env(safe-area-inset-left, 0px))) calc(-1 * max(20px, env(safe-area-inset-right, 0px))); padding-inline: max(20px, env(safe-area-inset-left, 0px)) max(20px, env(safe-area-inset-right, 0px)); }
+.top-in { max-width: var(--w); margin: 0 auto; height: 50px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.top .brand { font-family: var(--serif); font-weight: 500; font-size: 18px; color: var(--fg); }
+.top ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 22px; font-size: 15px; }
+.top ul a { color: var(--muted); }
+.top ul a:hover { color: var(--accent); text-decoration: none; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.page { max-width: var(--w); margin: 0 auto; padding-block: 48px 72px; }
+
+/* Header: photo on the right, name and bio on the left */
+.hero { display: grid; grid-template-columns: 1fr 168px; gap: 32px 40px; align-items: start; }
+.hero h1 { font-family: var(--serif); font-weight: 500; font-size: 44px; line-height: 1.1; letter-spacing: -0.01em; margin: 0 0 6px; }
+.hero .alt { font-family: var(--serif); font-weight: 400; color: var(--muted); font-size: 26px; margin-left: 10px; }
+.hero .role { color: var(--muted); font-size: 17px; margin: 0 0 20px; }
+.hero .bar { color: var(--rule); margin: 0 6px; }
+.hero p { margin: 0 0 14px; max-width: 60ch; }
+.focus { margin: 0 0 16px; padding-left: 1.1em; max-width: 60ch; display: grid; gap: 8px; }
+.focus li::marker { color: var(--accent); }
+.focus b { font-weight: 600; }
+.photo { width: 168px; height: 168px; border-radius: 10px; object-fit: cover; display: block; }
+
+.links { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 6px 0 0; padding: 0; list-style: none; font-size: 15px; }
+.links a { display: inline-flex; align-items: center; gap: 6px; }
+.links svg { width: 15px; height: 15px; fill: currentColor; }
+
+/* Sections */
+section { margin-top: 52px; }
+h2 { font-family: var(--serif); font-weight: 500; font-size: 26px; margin: 0 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--rule); letter-spacing: -0.005em; display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+h2 .more { font-family: var(--sans); font-size: 14px; font-weight: 400; }
+
+/* Affiliations */
+.affil { display: grid; grid-template-columns: 1fr auto; gap: 4px 24px; margin: 0; }
+.affil dt { font-weight: 600; }
+.affil dd { margin: 0; color: var(--muted); font-size: 15px; text-align: right; font-variant-numeric: tabular-nums; }
+.affil .sub { grid-column: 1 / -1; color: var(--muted); font-size: 15px; margin-top: -4px; margin-bottom: 8px; }
+
+/* News */
+.news { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 84px 1fr; gap: 8px 16px; }
+.news time { color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; padding-top: 3px; white-space: nowrap; }
+.news li { display: contents; }
+.news .tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; background: var(--accent-soft); color: var(--accent); padding: 1px 6px; border-radius: 4px; margin-right: 6px; vertical-align: 2px; }
+
+/* Publications */
+.pubs { list-style: none; margin: 0; padding: 0; display: grid; gap: 22px; }
+.pub .venue { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.pub .venue .note { font-weight: 400; letter-spacing: 0; text-transform: none; color: var(--muted); font-size: 13px; margin-left: 8px; }
+.pub .title { font-family: var(--serif); font-size: 21px; font-weight: 500; line-height: 1.3; margin: 2px 0 4px; display: block; color: var(--fg); }
+.pub .title:hover { color: var(--accent); text-decoration: none; }
+.pub .authors { color: var(--muted); font-size: 15.5px; margin: 0 0 4px; }
+.pub .authors b { color: var(--fg); font-weight: 600; }
+.pub .tldr { margin: 0 0 6px; font-size: 16px; }
+.pub .btns { display: flex; flex-wrap: wrap; gap: 6px; }
+.pub .btns a { font-size: 13px; border: 1px solid var(--rule); border-radius: 5px; padding: 1px 8px; color: var(--muted); }
+.pub .btns a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+/* Misc */
+.misc p { margin: 0 0 10px; }
+footer { margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 13.5px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .page { padding-block: 28px 56px; }
+  .top ul { gap: 14px; font-size: 14px; }
+  .hero { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 36px; }
+  .photo { width: 128px; height: 128px; order: -1; }
+  .news { grid-template-columns: 1fr; gap: 2px; }
+  .news time { padding-top: 10px; }
+  .affil dd { text-align: left; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .pub .title, .pub .btns a { transition: color .15s ease, border-color .15s ease; }
+}
